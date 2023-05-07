@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box ;
+}
+
+body{
+    background: url(https://mobimg.b-cdn.net/v3/fetch/1b/1bbe0c30fd8b9cd89656e6dc6d5e59a7.jpeg)center/cover;
+    height: 100vh;
+}
+
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.hidden{
+    display: none;
+}
+
+.btn{
+    border: none;
+    background: transparent;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+.show__btn{
+    background: red;
+    padding: 20px;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.show__btn:hover{
+    background: red;
+    color: chartreuse;
+}
+
+.modal{
+    position: fixed;
+    max-width: 600px;
+    width: 100%;
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 1;
+}
+
+.close__btn{
+    color: black;
+}
+
+.modal__header{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.modal__body h4{
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.modal__body p{
+    line-height:22px ;
+    color: teal;
+}
+
+.overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: rgb(0, 0, 0,0.5 );
+    backdrop-filter: blur(10px);
+}
